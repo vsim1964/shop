@@ -365,17 +365,17 @@ section {
   font-size: 20px;
 }
 
-.search-tabs-item-active.tab-active {
+.search-tabs-item.tab-active {
   border-radius: 5px;
   background-color: #f0f0f4;
   font-weight: 700;
 }
 
-.search-content-item {
+.search-content-item.tab-content {
   display: none;
 }
 
-.search-content-item.tab-content-active {
+.search-content-item.tab-content.tab-content-active {
   display: block;
 }
 
@@ -492,14 +492,6 @@ section {
   margin-bottom: 25px;
 }
 
-/* .tab-content {
-  display: none;
-}
-
-.tab-content.tab-content-active {
-  display: block;
-} */
-
 .popular-tabs {
   margin-bottom: 24px;
 }
@@ -539,7 +531,7 @@ section {
   position: relative;
 }
 
-.tab-active::before {
+.popular-tab.tab-active::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -549,22 +541,35 @@ section {
   height: 3px;
 }
 
+.popular-slider {
+  width: 100%;
+  height: 430px;
+}
+
+.popular-slider.tab-content {
+  display: none;
+}
+
+.popular-slider.tab-content.tab-content-active {
+  display: block;
+}
+
 .popular-content-list {
   /*   display: flex;
   flex-direction: row;
   justify-content: space-between; */
+  min-height: 430px;
   margin-top: 35px;
 }
 
 .popular-content-item {
-  width: 22.75% !important;
+  width: 271px !important ;
   min-height: 430px;
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 3px;
   position: relative;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-right: 28.6px;
 }
 
 .popular-img {
@@ -577,14 +582,14 @@ section {
   background-color: transparent;
   position: absolute;
   top: 16px;
-  right: 19px;
+  right: 17px;
   cursor: pointer;
 }
 
 .love-add::before {
   content: "";
   display: block;
-  width: 25px;
+  width: 26px;
   height: 22px;
   background-color: #ffffff;
   background-image: url(../images/love.svg);
@@ -598,8 +603,8 @@ section {
 }
 
 .popular-icon {
-  width: 22px;
-  height: 24px;
+  width: 25px;
+  height: 22px;
 }
 
 .popular-name {
@@ -726,8 +731,6 @@ section {
   line-height: 19px;
   color: #1c62cd;
   text-align: center;
-  display: inherit;
-  text-align: center;
   margin-bottom: 25px;
   text-decoration: underline;
   display: none;
@@ -751,23 +754,22 @@ section {
   margin-top: 30px;
 }
 
-.popular-content-list-btn {
+.popular-slider-list-btnprev {
+  left: -40px;
+}
+
+.popular-slider-list-btnnext {
+  right: -40px;
+}
+
+.popular-slider-list-btn {
   background-color: transparent;
   border: 0;
   position: absolute;
-  top: 51%;
-  transform: translateY(-50%);
+  top: 25%;
   margin: 0;
   padding: 0;
   z-index: 5;
   cursor: pointer;
   outline: none;
-}
-
-.popular-content-list-btnprev {
-  left: -220px;
-}
-
-.popular-content-list-btnnext {
-  right: -150px;
 }

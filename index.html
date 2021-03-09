@@ -12,7 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;0,700;1,400&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-2.css">
 </head>
 
 <body>
@@ -196,27 +196,30 @@
 						Поиск по названию товара
 					</a>
 				</div>
+				<div class="search-content">
+					<div id="tab-1" class="tab-content search-content-item tab-content-active">
+						<form action="" class="search-content-form">
+							<input type="search" class="search-content-input" placeholder="Введите номер">
+							<button class="search-content-button">Искать</button>
+						</form>
+					</div>
+					<div id="tab-2" class="tab-content search-content-item ">
+						<form action="" class="search-content-form">
+							<input type="search" class="search-content-input" placeholder="Введите марку">
+							<button class="search-content-button">Искать</button>
+						</form>
+					</div>
+					<div id="tab-3" class="tab-content search-content-item ">
+						<form action="" class="search-content-form">
+							<input type="search" class="search-content-input" placeholder="Введите название товара">
+							<button class="search-content-button">Искать</button>
+						</form>
+					</div>
+				</div>
+
+
 			</div>
-			<div class="search-content">
-				<div id="tab-1" class="tab-content search-content-item tab-content-active">
-					<form action="" class="search-content-form">
-						<input type="search" class="search-content-input" placeholder="Введите номер">
-						<button class="search-content-button">Искать</button>
-					</form>
-				</div>
-				<div id="tab-2" class="tab-content search-content-item ">
-					<form action="" class="search-content-form">
-						<input type="search" class="search-content-input" placeholder="Введите марку">
-						<button class="search-content-button">Искать</button>
-					</form>
-				</div>
-				<div id="tab-3" class="tab-content search-content-item ">
-					<form action="" class="search-content-form">
-						<input type="search" class="search-content-input" placeholder="Введите название товара">
-						<button class="search-content-button">Искать</button>
-					</form>
-				</div>
-			</div>
+
 		</div>
 	</section>
 
@@ -289,7 +292,7 @@
 				<h3 class="section-title">
 					Популярные товары
 				</h3>
-				<div class="tabs-wrapper">
+				<div class="popular-slider-wrapper">
 					<div class="popular-tabs">
 
 						<a href="#pop-1" class="popular-tab tab tab-active">
@@ -313,11 +316,12 @@
 					</div>
 
 
-					<div class="popular-content-tab">
+					<div class="popular-content-tabs">
 
-						<div id="pop-1" class="tab-content tab-content-active">
+						<div id="pop-1" class="popular-slider tab-content tab-content-active">
+							<!-- slider -->
 							<div class="popular-content-list">
-								<div class="popular-content-item popular-sale tab-content tab-content-active">
+								<div class="popular-content-item popular-sale">
 									<button class="love-add"></button>
 									<button class="popular-basket">
 										<img src="images/basket-white.svg" alt="" clas="basket-img">
@@ -331,8 +335,9 @@
 									</a>
 									<p class="popular-no">нет в наличии</p>
 									<a href="" class="link-message">Cообщить о поступлении</a>
+
 								</div>
-								<div class="popular-content-item  tab-content">
+								<div class="popular-content-item">
 									<button class="love-add"></button>
 									<button class="popular-basket">
 										<img src="images/basket-white.svg" alt="" clas="basket-img">
@@ -347,7 +352,7 @@
 									<p class="popular-no">нет в наличии</p>
 									<a href="" class="link-message">Cообщить о поступлении</a>
 								</div>
-								<div class="popular-content-item  tab-content">
+								<div class="popular-content-item">
 									<button class="love-add"></button>
 									<button class="popular-basket">
 										<img src="images/basket-white.svg" alt="" clas="basket-img">
@@ -362,7 +367,67 @@
 									<p class="popular-no">нет в наличии</p>
 									<a href="" class="link-message">Cообщить о поступлении</a>
 								</div>
-								<div class="popular-content-item not-available tab-content">
+								<div class="popular-content-item not-available">
+									<button class="love-add"></button>
+									<button class="popular-basket">
+										<img src="images/basket-white.svg" alt="" clas="basket-img">
+									</button>
+									<a href="" class="popular-link popular-link-sale">
+										<p class="popular-click-text">посмотреть товар</p>
+										<img src="/images/p4.png" alt="" class="popular-img">
+										<p class="popular-name">Спасательное
+											снаряжение</p>
+										<p class="popular-price"></p>
+									</a>
+									<p class="popular-no">нет в наличии</p>
+									<a href="" class="link-message">Cообщить о поступлении</a>
+								</div>
+								<div class="popular-content-item">
+									<button class="love-add"></button>
+									<button class="popular-basket">
+										<img src="images/basket-white.svg" alt="" clas="basket-img">
+									</button>
+									<a href="" class="popular-link popular-link-sale">
+										<p class="popular-click-text">посмотреть товар</p>
+										<img src="/images/p3.png" alt="" class="popular-img">
+										<p class="popular-name">
+											BRP Audio-Premium System</p>
+										<p class="popular-price">68000 ₽</p>
+									</a>
+									<p class="popular-no">нет в наличии</p>
+									<a href="" class="link-message">Cообщить о поступлении</a>
+								</div>
+								<div class="popular-content-item not-available">
+									<button class="love-add"></button>
+									<button class="popular-basket">
+										<img src="images/basket-white.svg" alt="" clas="basket-img">
+									</button>
+									<a href="" class="popular-link popular-link-sale">
+										<p class="popular-click-text">посмотреть товар</p>
+										<img src="/images/p4.png" alt="" class="popular-img">
+										<p class="popular-name">Спасательное
+											снаряжение</p>
+										<p class="popular-price"></p>
+									</a>
+									<p class="popular-no">нет в наличии</p>
+									<a href="" class="link-message">Cообщить о поступлении</a>
+								</div>
+								<div class="popular-content-item">
+									<button class="love-add"></button>
+									<button class="popular-basket">
+										<img src="images/basket-white.svg" alt="" clas="basket-img">
+									</button>
+									<a href="" class="popular-link popular-link-sale">
+										<p class="popular-click-text">посмотреть товар</p>
+										<img src="/images/p3.png" alt="" class="popular-img">
+										<p class="popular-name">
+											BRP Audio-Premium System</p>
+										<p class="popular-price">68000 ₽</p>
+									</a>
+									<p class="popular-no">нет в наличии</p>
+									<a href="" class="link-message">Cообщить о поступлении</a>
+								</div>
+								<div class="popular-content-item not-available">
 									<button class="love-add"></button>
 									<button class="popular-basket">
 										<img src="images/basket-white.svg" alt="" clas="basket-img">
@@ -380,12 +445,26 @@
 							</div>
 						</div>
 
+						<div id="pop-2" class="popular-slider tab-content">
+							Второй!
+						</div>
+
+						<div id="pop-3" class="popular-slider tab-content">
+							Третий!
+						</div>
+						<div id="pop-4" class="popular-slider tab-content">
+							Четвертый!
+						</div>
+
+						<div id="pop-5" class="popular-slider tab-content">
+							Пятый!
+						</div>
+						<div id="pop-6" class="popular-slider tab-content">
+							Шестой!
+						</div>
 
 					</div>
-
-
-				</div>
-
+					<a href="" class="further">показать ещё</a>
 	</section>
 
 
